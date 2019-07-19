@@ -1,7 +1,6 @@
 <template>
-    <div class="dash-mian fullwidth position-relative pull-left h-100">
         <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth h-100 pull-left bg-white">
-            <div class="profile d-table m-auto"><div class="pro-pic d-table"><img alt="image" class="img-fluid" src="image/pro-pic.jpg" /></div></div>
+            <div class="profile d-table m-auto"><div class="pro-pic d-table"><img alt="image" class="img-fluid" src="../assets/image/pro-pic.jpg" /></div></div>
             <h5 class="text-center mt-2 mb-5">Harry Poter</h5>
             <ul class="fullwidth">
                 <li class="mb-4 li-list fullwidth pull-left">
@@ -18,8 +17,12 @@
                 </li>
             </ul>
         </div>
-    </div>
 </template>
+<script>
+export default {
+    name: 'sideBar',
+}
+</script>
 
 <style>
     .pro-pic{
