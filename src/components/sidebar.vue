@@ -50,9 +50,6 @@ export default {
     .body-bg{
         background: #ebf0f2 !important;
     }
-    .dash-mian{
-        padding: 0 30px 0 330px;
-    }
     .li-list a{
         color: #000;
     }
