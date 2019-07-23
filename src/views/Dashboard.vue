@@ -1,7 +1,7 @@
 <template>
     <div class="dash-mian fullwidth position-relative pull-left h-100">
-        <SideBar/>
-        <Header/>
+        <SideBar :visibility="visibility"></SideBar>
+        <Header v-on:toggle-sidebar="toggleSidebar(visibility)"></Header>
         <div class="dash-top fullwidth pull-left pt-4">
             <div class="col-lg-6 col-md-12 col-sm-6 pull-left">
                 <div class="dash-top-left pull-left fullwidth text-center position-relative bg-white">
@@ -31,6 +31,16 @@ export default {
     components: {
         SideBar,
         Header
+    },
+    data () {
+        return {
+            visibility: true,
+        }
+    },
+    methods: {
+        toggleSidebar: function (visibility) {
+            this.visibility = visibility ? false : true;
+        }
     }
 }
 

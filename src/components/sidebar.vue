@@ -1,7 +1,8 @@
 <template>
-        <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth h-100 pull-left bg-white">
+  <transition name="slide-in-out">
+        <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth h-100 pull-left bg-white" v-show="visibility">
             <div class="profile d-table m-auto"><div class="pro-pic d-table"><img alt="image" class="img-fluid" src="../assets/image/pro-pic.jpg" /></div></div>
-            <h5 class="text-center mt-2 mb-5">Harry Poter</h5>
+            <h5 class="text-center mt-2 mb-5">Harry Potter</h5>
             <ul class="fullwidth">
                 <li class="mb-4 li-list fullwidth pull-left">
                     <a href="" class="fullwidth pull-left"><i class="fas fa-users mr-3"></i> Group Selector</a>
@@ -17,14 +18,49 @@
                 </li>
             </ul>
         </div>
+  </transition>
 </template>
+
 <script>
+
 export default {
     name: 'sideBar',
+    props: ['visibility'],
+    data () {
+        return {
+            show: true
+        }
+    }
 }
+
 </script>
 
 <style>
+
+    .slide-in-out-enter {
+        opacity: 0;
+    }
+    .slide-in-out-enter-active {
+        transition: all .8s ease;
+    }
+
+    .slide-in-out-enter-to {
+        opacity: 1;
+        
+    }
+
+    .slide-in-out-leave {
+        opacity: 1;
+    }
+
+    .slide-in-out-leave-active {
+        transition: all .8s ease;
+    }
+
+    .slide-in-out-leave-to {
+        opacity: 0;
+    }
+
     .pro-pic{
         width: 120px;
         height: 120px;
@@ -41,6 +77,11 @@ export default {
         border: 1px solid #ebf0f2;
     }
     .side-bar{
+        /* -webkit-transition: all 0.9s ease-out;
+        -moz-transition: all 0.9s ease-out;
+        -o-transition: all 0.9s ease-out;
+        transition: all 0.9s ease-out;  */
+
         max-width: 300px;
         box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
         top: 0;
