@@ -38,33 +38,22 @@ export default {
 <style>
 
     .slide-in-out-enter {
-        opacity: 0;
-        width: 0px;
-    }
-
-    .slide-in-out-enter-active {
-        transition: all .3s ease;
-        opacity: 0.5;
+        left: -330px !important; 
+        transition: all .3s ease 0s;
     }
 
     .slide-in-out-enter-to {
-        opacity: 1;
-        width: 330px;
+        left: 0 !important;
+        transition: all .3s ease 0s;
     }
 
     .slide-in-out-leave {
-        opacity: 1;
-        width: 330px;
+        left: 0;
+        transition: all .3s ease 0s;
     }
-
-    .slide-in-out-leave-active {
-        transition: all .3s ease;
-        opacity: 0.5;
-    }
-
     .slide-in-out-leave-to {
-        opacity: 0;
-        width: 0px;
+        left: -330px !important;
+        transition: all .3s ease 0s;
     }
 
     .pro-pic{
@@ -105,6 +94,13 @@ export default {
     }
     .mr-22{
         margin-right: 22px;
+    }
+    @media only screen and (max-width: 991px){
+        .side-bar{
+            left: -330px !important;
+            transition: all .3s ease 0s;
+        }
+        
     }
 </style>
 

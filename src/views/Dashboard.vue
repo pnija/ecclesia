@@ -70,4 +70,9 @@ export default {
     .dash-top-left{
         padding: 10px 10px 10px 86px;
     }
+    @media only screen and (max-width:991px){
+        .dash-mian{
+            padding: 0 30px !important;
+        }
+    }
 </style>

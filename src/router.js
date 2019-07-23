@@ -4,6 +4,7 @@ import SignIn from './views/SignIn.vue'
 import Dashboard from './views/Dashboard.vue'
 import Addvisitors from './views/Addvisitors.vue'
 import Groupselector from './views/Groupselector.vue'
+import Registerattendence from './views/Registerattendence.vue'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/groupselector',
       name: 'Groupselector',
       component: Groupselector
+    },
+    {
+      path: '/registerattendence',
+      name: 'Registerattendence',
+      component: Registerattendence
     },
     {
       path: '/about',
