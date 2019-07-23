@@ -39,26 +39,32 @@ export default {
 
     .slide-in-out-enter {
         opacity: 0;
+        width: 0px;
     }
+
     .slide-in-out-enter-active {
-        transition: all .8s ease;
+        transition: all .3s ease;
+        opacity: 0.5;
     }
 
     .slide-in-out-enter-to {
         opacity: 1;
-        
+        width: 330px;
     }
 
     .slide-in-out-leave {
         opacity: 1;
+        width: 330px;
     }
 
     .slide-in-out-leave-active {
-        transition: all .8s ease;
+        transition: all .3s ease;
+        opacity: 0.5;
     }
 
     .slide-in-out-leave-to {
         opacity: 0;
+        width: 0px;
     }
 
     .pro-pic{
