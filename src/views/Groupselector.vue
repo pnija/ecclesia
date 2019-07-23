@@ -13,7 +13,7 @@
                     <div class="col-lg-6 pull-left">
                         <div class="fullwidth p-2 pl-3 rounded add-input">
                             <p>Sunday Connecting Group 10:00 to 12:00</p>
-                            <select class="fullwidth p-2 pl-3 add-input">
+                            <select class="fullwidth p-2 pl-3 add-input select-bg">
                                 <option value="Select">Prisons Ministry</option>
                                 <option value="Select1">Workship Ministry</option>
                             </select>
@@ -96,6 +96,9 @@ export default {
     }
     .can-btn{
         background: #d3ac6b;
+    }
+    .select-bg{
+        background: #dfe1e2 !important;
     }
     @media only screen and (max-width: 991px) {
         .height-100{
