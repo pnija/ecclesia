@@ -1,7 +1,7 @@
 <template>
     <header class="pull-left fullwidth pt-4 pb-4">
         <div class="logo pull-left">
-            <div class="hamburgger pull-left mr-3" v-on:click="humberger($event)">
+            <div class="hamburgger pull-left mr-3" v-on:click="$emit('toggle-sidebar')">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
@@ -15,16 +15,7 @@
 <script>
 export default {
     name: 'header',
-    methods : {
-        // humberger: (event) => {
-        //     console.log(event)
-        // },
-
-    }
 }
-// function myFunction(x) {
-//   x.classList.toggle("change");
-// }
 </script>
 
 <style>
