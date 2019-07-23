@@ -1,5 +1,5 @@
 <template>
-    <div class="dash-mian fullwidth position-relative pull-left h-100">
+    <div class="fullwidth position-relative pull-left h-100" v-bind:class="{'dash-mian': visibility,'dash-mian-el':!visibility}">
         <SideBar :visibility="visibility"></SideBar>
         <Header v-on:toggle-sidebar="toggleSidebar(visibility)"></Header>
         <div class="dash-top fullwidth pull-left pt-4">
@@ -45,11 +45,16 @@ export default {
 }
 
 </script>
-
 <style>
     .dash-mian{
         padding: 0 30px 0 330px;
         background: #ebf0f2;
+        transition-duration: .3s;
+    }
+    .dash-mian-el{
+        padding: 0 30px;
+        background: #ebf0f2;
+        transition-duration: .3s;
     }
     .dash-top-icon{
         top: 0;
