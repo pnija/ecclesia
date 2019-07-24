@@ -1,7 +1,5 @@
 <template>
-    <div class="dash-mian fullwidth position-relative pull-left height-100">
-        <SideBar/>
-        <Header/>
+    <theme>
         <div class="add-visitor fullwidth pull-left bg-white p-5 mt-4">
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
@@ -62,20 +60,18 @@
                 <button type="button" class="fullwidth pull-right pt-2 pb-2 can-btn text-white text-center b5 border-0 rounded mr-3">Cancel</button>
             </div>
         </div>
-    </div>
+    </theme>
 </template>
 
 <script>
 
-import SideBar from '../components/sidebar.vue'
-import Header from '../components/header.vue'
+import Theme from '../components/Theme.vue'
 
 export default {
     name: 'Dashboard',
     components: {
-        SideBar,
-        Header
-    }
+        Theme,
+    },
 }
 
 </script>

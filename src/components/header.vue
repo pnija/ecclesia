@@ -6,9 +6,10 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
-            <span class="logo-img pull-left mr-2"><img class="img-fluid" src="../assets/image/logo-main2.jpg" /></span><span class="b5">Ecclesia </span>Connecting Group
+            <span class="logo-img logo-img2 pull-left mr-2"><img class="img-fluid" src="../assets/image/logo-main2.jpg" /></span>
+            <span class="b5 logo-name">Ecclesia <span class="cn-grp b4">Connecting Group</span></span>
         </div>
-        <div class="user-profile pull-right "><span class="logo-img pull-left mr-2"><img class="img-fluid" src="../assets/image/pro-pic.jpg" /></span>Harry<i class="fas fa-chevron-down ml-2"></i></div>
+        <div class="user-profile pull-right "><span class="logo-img pull-left mr-2"><img class="img-fluid" src="../assets/image/pro-pic.jpg" /></span><p class="pull-left">Harry</p><i class="fas fa-chevron-down ml-2"></i></div>
     </header>
 </template>
 
@@ -54,5 +55,23 @@ export default {
     .change .bar3 {
         -webkit-transform: rotate(30deg) translate(-6px, 1px);
         transform: rotate(30deg) translate(-6px, 1px);
+    }
+    .logo-name{
+        font-size: 21px;
+    }
+    .user-profile p{
+        line-height: 2.4;
+        margin: 0;
+    }
+    .user-profile i{
+        line-height: 2.4;
+    }
+    @media only screen and (max-width:460px){
+        .user-profile p{
+            display: none;
+        }
+        .cn-grp{
+            display: none;
+        }
     }
 </style>

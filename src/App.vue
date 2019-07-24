@@ -7,7 +7,7 @@
           crossorigin="anonymous">
     </head>
     <body>
-      <div id="app" class="h-100">
+      <div id="app" class="full-height">
           <!-- <div id="nav">
             <router-link to="/">Home</router-link> |
             <router-link to="/about">About</router-link>
@@ -131,5 +131,17 @@ a{
 html,body{
 	height: 100%;
 }
-
+.full-height{
+  height: 100%;
+}
+@media only screen and (max-width: 991px){
+  .full-height{
+    height: inherit !important;
+  }
+}
+@media only screen and (max-width: 575px){
+  .full-height{
+    height: initial !important;
+  }
+}
 </style>

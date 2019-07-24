@@ -1,6 +1,6 @@
 <template>
   <transition name="slide-in-out">
-        <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth h-100 pull-left bg-white" v-show="visibility">
+        <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth pull-left bg-white" v-show="visibility">
             <div class="profile d-table m-auto"><div class="pro-pic d-table"><img alt="image" class="img-fluid" src="../assets/image/pro-pic.jpg" /></div></div>
             <h5 class="text-center mt-2 mb-5">Harry Potter</h5>
             <ul class="fullwidth">
@@ -39,7 +39,7 @@ export default {
 
     /* transition */
     .slide-in-out-enter {
-        left: -330px !important; 
+        left: -280px !important; 
         transition: all .3s ease 0s;
     }
 
@@ -53,7 +53,7 @@ export default {
         transition: all .3s ease 0s;
     }
     .slide-in-out-leave-to {
-        left: -330px !important;
+        left: -280px !important;
         transition: all .3s ease 0s;
     }
     /* transition-end */
@@ -79,11 +79,12 @@ export default {
         -o-transition: all 0.9s ease-out;
         transition: all 0.9s ease-out;  */
 
-        max-width: 300px;
+        max-width: 250px;
         box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
         top: 0;
         left: 0;
         bottom: 0;
+        height: 100% !important;
     }
     .body-bg{
         background: #ebf0f2 !important;
@@ -99,10 +100,10 @@ export default {
     }
     @media only screen and (max-width: 991px){
         .side-bar{
-            left: -330px !important;
+            left: -250px !important;
             transition: all .3s ease 0s;
+            height: inherit !important;
         }
-        
     }
 </style>
 

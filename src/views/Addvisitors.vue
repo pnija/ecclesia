@@ -1,52 +1,50 @@
 <template>
-    <div class="dash-mian fullwidth position-relative pull-left height-100">
-        <SideBar/>
-        <Header/>
-        <div class="add-visitor fullwidth pull-left bg-white p-5 mt-4">
+    <theme>
+        <div class="add-visitor fullwidth pull-left bg-white mt-4">
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Name*</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
                         <input type="text" placeholder="Name*" class="fullwidth p-2 pl-3 rounded add-input" />
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Email*</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
                         <input type="email" placeholder="Email*" class="fullwidth p-2 pl-3 rounded add-input" />
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Cell Number*</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
-                        <input type="number" placeholder="Cell Number*" class="fullwidth p-2 pl-3 rounded add-input" />
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
+                        <input type="tel" placeholder="Cell Number*" class="fullwidth p-2 pl-3 rounded add-input" />
                     </div>
                 </div>
             </div>
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Visitor Type</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
                         <select class="fullwidth p-2 pl-3 rounded add-input">
                             <option value="Select">Select</option>
                             <option value="Select1">Select 1</option>
@@ -57,12 +55,12 @@
             </div> 
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Gender</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
                         <p class="pull-left mr-4"><input type="radio" name="gender" value="male" class="pull-left mr-2 mt-1">Male</p>
                         <p class="pull-left"><input type="radio" name="gender" value="female" class="pull-left mr-2 mt-1">Female</p>
                     </div>
@@ -70,12 +68,12 @@
             </div> 
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
-                    <div class="col-lg-3 pull-left">
+                    <div class="col-lg-3 col-md-3 col-sm-3 pull-left">
                         <div class="row">
                             <p>Special Request</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 pull-left">
+                    <div class="col-lg-6 col-md-9 col-sm-9 pull-left no-pad">
                         <textarea class="fullwidth p-2 rounded add-input pl-3" placeholder="Special Request"></textarea>
                     </div>
                 </div>
@@ -84,20 +82,18 @@
                 <button type="submit" class="fullwidth pull-right pt-2 pb-2 bg text-white text-center b5 border-0 rounded">Submit</button>
             </div>
         </div>
-    </div>
+    </theme>
 </template>
 
 <script>
 
-import SideBar from '../components/sidebar.vue'
-import Header from '../components/header.vue'
+import Theme from '../components/Theme.vue'
 
 export default {
     name: 'Dashboard',
     components: {
-        SideBar,
-        Header
-    }
+        Theme,
+    },
 }
 
 </script>
@@ -116,9 +112,20 @@ export default {
     .height-100{
         height: 100%;
     }
+    .add-visitor{
+        padding: 48px;
+    }
     @media only screen and (max-width: 991px) {
         .height-100{
             height: inherit !important;
+        }
+    }
+    @media only screen and (max-width: 575px) {
+        .add-visitor{
+            padding: 26px;
+        }
+        .no-pad{
+            padding: 0 !important;
         }
     }
 </style>
