@@ -37,6 +37,7 @@ export default {
 
 <style>
 
+    /* transition */
     .slide-in-out-enter {
         left: -330px !important; 
         transition: all .3s ease 0s;
@@ -55,6 +56,7 @@ export default {
         left: -330px !important;
         transition: all .3s ease 0s;
     }
+    /* transition-end */
 
     .pro-pic{
         width: 120px;
