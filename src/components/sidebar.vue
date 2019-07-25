@@ -79,7 +79,7 @@ export default {
         -o-transition: all 0.9s ease-out;
         transition: all 0.9s ease-out;  */
 
-        max-width: 250px;
+        max-width: 260px;
         box-shadow: 5px 0px 5px rgba(0,0,0,0.1);
         top: 0;
         left: 0;

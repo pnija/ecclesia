@@ -49,13 +49,7 @@ export default {
     .dash-top-left{
         padding: 10px 10px 10px 86px;
     }
-    @media only screen and (max-width:991px){
-        .dash-mian{
-            padding: 0 30px 30px 30px !important;
-            transform: translateX(250px);
-            height: inherit !important;
-        }
-    }
+
     @media only screen and (max-width:767px){
         .res-pd{
             margin-bottom: 30px;

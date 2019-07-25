@@ -56,7 +56,7 @@ export default {
         background: #e5e1e1;
     }
     .no-pad{
-        padding: inherit;
+        padding: inherit !important;
     }
     .clm input{
         background: inherit;
