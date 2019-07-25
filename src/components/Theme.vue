@@ -41,6 +41,7 @@ export default {
         padding: 0 30px;
         background: #ebf0f2;
         transition-duration: .3s;
+        height: 100%;
     }
     @media only screen and (max-width:991px){
         .dash-mian-el{
