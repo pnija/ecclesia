@@ -25,8 +25,20 @@ export default {
     methods: {
         toggleSidebar: function (visibility) {
             this.visibility = visibility ? false : true;
-        }
-    }
+        },
+        handleResize() {
+            let w = window.outerWidth
+            let v = this.visibility
+            this.visibility = w < 991 ? false : w >= 991 ? true : v
+        }   
+    },
+    created() {
+        window.addEventListener('resize', this.handleResize);
+        this.handleResize();
+    },
+    destroyed() {
+        window.removeEventListener('resize', this.handleResize);
+    },
 }
 
 </script>
