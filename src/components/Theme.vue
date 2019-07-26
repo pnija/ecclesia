@@ -27,7 +27,7 @@ export default {
             this.visibility = visibility ? false : true;
         },
         handleResize() {
-            let w = window.outerWidth
+            let w = window.innerWidth
             let v = this.visibility
             this.visibility = w < 991 ? false : w >= 991 ? true : v
         }   
@@ -53,6 +53,7 @@ export default {
         padding: 0 30px;
         background: #ebf0f2;
         transition-duration: .3s;
+        height: 100%;
     }
     @media only screen and (max-width:991px){
         .dash-mian-el{
