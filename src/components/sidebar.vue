@@ -14,7 +14,7 @@
                     <router-link to="/addvisitors"><a class="fullwidth pull-left"><i class="fas fa-user-plus mr-3"></i> Record/Add Visitors</a></router-link>
                 </li>
                 <li class="mb-4 li-list fullwidth pull-left">
-                    <router-link to="/dash"><a class="active fullwidth pull-left"><i class="fas fa-database mr-22"></i> Dashboard</a></router-link>
+                    <router-link to="/dash"><a class="fullwidth pull-left"><i class="fas fa-database mr-22"></i> Dashboard</a></router-link>
                 </li>
             </ul>
         </div>
@@ -92,7 +92,7 @@ export default {
     .li-list a{
         color: #000;
     }
-    .li-list a:hover,.li-list .active{
+    .li-list a:hover,.li-list .router-link-active{
         color: #b51f32 !important;
     }
     .mr-22{

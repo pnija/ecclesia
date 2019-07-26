@@ -16,20 +16,26 @@
             </div>
         </div>
     </div>
-    <!-- <chart/> -->
+    <piechart/>
+    <barchart/>
+    <scatterchart/>
   </theme>
 </template>
 
 <script>
 
 import Theme from '../components/Theme.vue'
-// import chart from '../components/charts/chart.vue'
+import Piechart from '../components/charts/pie-chart.vue'
+import Barchart from '../components/charts/bar-chart.vue'
+import Scatterchart from '../components/charts/scatter-chart.vue'
 
 export default {
     name: 'Dashboard',
     components: {
         Theme,
-        // chart,
+        Piechart,
+        Barchart,
+        Scatterchart,
     },
 }
 
