@@ -14,8 +14,8 @@
                     <input type="password" class="fullwidth p-2 rounded sign-border mb-3" placeholder="password" />
                     <span class="pull-left fnt-14"><input type="checkbox" class="mr-2" />Keep me logged in</span>
                     <a class="pull-right fnt-14 color" href="">Forgot password ?</a>
-                    <button type="submit" class="text-center pt-2 pb-2 fullwidth bg text-white border-0 rounded mt-3 mb-2 btn">Sign In</button>
-                    <div class="text-center fullwidth fnt-14">Not registered? <a href="signup.html" class="color">Create an account</a></div>
+                    <button @click="signIn()" class="text-center pt-2 pb-2 fullwidth bg text-white border-0 rounded mt-3 mb-2 btn">Sign In</button>
+                    <div class="text-center fullwidth fnt-14">Not registered? <a class="color">Create an account</a></div>
                 </form>
             </div>
         </div>
@@ -25,6 +25,11 @@
 <script>
 export default {
     name: 'SignIn',
+    methods: {
+        signIn(){
+            this.$router.push('/dash')
+        }
+    }
 }
 </script>
 

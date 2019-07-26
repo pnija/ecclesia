@@ -5,16 +5,16 @@
             <h5 class="text-center mt-2 mb-5">Harry Potter</h5>
             <ul class="fullwidth">
                 <li class="mb-4 li-list fullwidth pull-left">
-                    <a href="" class="fullwidth pull-left"><i class="fas fa-users mr-3"></i> Group Selector</a>
+                   <router-link to="/groupselector"><a class="fullwidth pull-left"><i class="fas fa-users mr-3"></i> Group Selector</a></router-link>
                 </li>
                 <li class="mb-4 li-list fullwidth pull-left">
-                    <a href="" class="fullwidth pull-left"><i class="fas fa-user-edit mr-3"></i> Register Attendance</a>
+                    <router-link to="/registerattendence"><a class="fullwidth pull-left"><i class="fas fa-user-edit mr-3"></i> Register Attendance</a></router-link>
                 </li>
                 <li class="mb-4 li-list fullwidth pull-left">
-                    <a href="" class="fullwidth pull-left"><i class="fas fa-user-plus mr-3"></i> Record/Add Visitors</a>
+                    <router-link to="/addvisitors"><a class="fullwidth pull-left"><i class="fas fa-user-plus mr-3"></i> Record/Add Visitors</a></router-link>
                 </li>
                 <li class="mb-4 li-list fullwidth pull-left">
-                    <a href="" class="active fullwidth pull-left"><i class="fas fa-database mr-22"></i> Dashboard</a>
+                    <router-link to="/dash"><a class="fullwidth pull-left"><i class="fas fa-database mr-22"></i> Dashboard</a></router-link>
                 </li>
             </ul>
         </div>
@@ -92,7 +92,7 @@ export default {
     .li-list a{
         color: #000;
     }
-    .li-list a:hover,.li-list .active{
+    .li-list a:hover,.li-list .router-link-active{
         color: #b51f32 !important;
     }
     .mr-22{
