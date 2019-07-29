@@ -139,7 +139,7 @@ html,body{
     height: inherit !important;
   }
 }
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 767px){
   .full-height{
     height: initial !important;
   }
