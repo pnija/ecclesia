@@ -1,6 +1,9 @@
 <template>
-  <div class="small">
-    <bar-chart :chart-data="datacollection" :options="options"></bar-chart>
+  <div class="col-lg-4 pull-left">
+    <div class="small bg-white p-4">
+      <h6>Attendance Snapshot by Month</h6>
+      <bar-chart :chart-data="datacollection" :options="options"></bar-chart>
+    </div>
   </div>
 </template>
 
@@ -23,36 +26,29 @@
     methods: {
       fillData () {
         this.datacollection = {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['13/06/19', '14/06/19', '15/06/19', '16/06/19', '17/06/19', '18/06/19'],
           datasets: [{
-              label: '# of Votes',
+              label: 'Attendance',
               data: [12, 19, 3, 5, 2, 3],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)',
-                  'rgba(255, 159, 64, 0.2)'
-              ],
-              borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)'
-              ],
-              borderWidth: 1
+              backgroundColor: '#b51f32',
           }]
         };
       this.options = {
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
                 }
-            }]
+            }],
+            xAxes: [{
+            barPercentage: 0.5,
+            barThickness: 15,
+            maxBarThickness: 30,
+            minBarLength: 2,
+            gridLines: {
+                offsetGridLines: true
+            }
+        }]
         }
       }
       },

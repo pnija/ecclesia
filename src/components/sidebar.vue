@@ -3,7 +3,7 @@
         <div class="side-bar pt-5 pl-4 pr-4 position-absolute fullwidth pull-left bg-white" v-show="visibility">
             <div class="profile d-table m-auto"><div class="pro-pic d-table"><img alt="image" class="img-fluid" src="../assets/image/pro-pic.jpg" /></div></div>
             <h5 class="text-center mt-2 mb-5">Harry Potter</h5>
-            <ul class="fullwidth">
+            <ul class="fullwidth pull-left">
                 <li class="mb-4 li-list fullwidth pull-left">
                    <router-link to="/groupselector"><a class="fullwidth pull-left"><i class="fas fa-users mr-3"></i> Group Selector</a></router-link>
                 </li>

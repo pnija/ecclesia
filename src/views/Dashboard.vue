@@ -16,9 +16,11 @@
             </div>
         </div>
     </div>
-    <piechart/>
-    <barchart/>
-    <scatterchart/>
+    <div class="chart-wrapper fullwidth pull-left mt-5">
+        <barchart/>
+        <linechart/>
+        <piechart/>
+    </div>
   </theme>
 </template>
 
@@ -27,7 +29,7 @@
 import Theme from '../components/Theme.vue'
 import Piechart from '../components/charts/pie-chart.vue'
 import Barchart from '../components/charts/bar-chart.vue'
-import Scatterchart from '../components/charts/scatter-chart.vue'
+import Linechart from '../components/charts/line-chart.vue'
 
 export default {
     name: 'Dashboard',
@@ -35,7 +37,7 @@ export default {
         Theme,
         Piechart,
         Barchart,
-        Scatterchart,
+        Linechart,
     },
 }
 

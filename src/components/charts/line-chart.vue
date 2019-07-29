@@ -1,15 +1,18 @@
 <template>
-  <div class="small">
-    <scatter-chart :chart-data="datacollection" :options="options"></scatter-chart>
+  <div class="col-lg-4 pull-left">
+    <div class="small bg-white p-4">
+      <h6>Attendance % by Month</h6>
+      <line-chart :chart-data="datacollection" :options="options"></line-chart>
+    </div>
   </div>
 </template>
 
 <script>
-  import ScatterChart from './js/scatter.js'
+  import LineChart from './js/line.js'
 
   export default {
     components: {
-      ScatterChart
+      LineChart
     },
     data () {
       return {

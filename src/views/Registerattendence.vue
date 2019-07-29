@@ -38,7 +38,7 @@
             <div class="col-lg-6 col-md-6  pull-left">
                 <h4 class="mt-4 mb-4 vis-let">A</h4>
                 <ul class="fullwidth pull-left">
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -65,7 +65,7 @@
                 </ul>
                 <h4 class="mt-4 mb-4 vis-let">B</h4>
                 <ul class="fullwidth pull-left">
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -94,7 +94,7 @@
             <div class="col-lg-6 col-md-6 pull-left">
                 <h4 class="mt-4 mb-4 vis-let">Y</h4>
                 <ul class="fullwidth pull-left">
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -121,7 +121,7 @@
                 </ul>
                 <h4 class="mt-4 mb-4 vis-let">Z</h4>
                 <ul class="fullwidth pull-left">
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="fullwidth pull-left li-list mb-2 pb-2">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
                         <div class="visitor fullwidth pull-left position-relative pl-60">
                             <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
                             <div class="pull-left">
@@ -206,7 +206,7 @@ export default {
     .vis-icon{
         font-size: 22px;
     }
-    .li-list{
+    .li-list2{
         line-height: 2;
         border-bottom: 1px solid #eeeeee;
     }
