@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 pull-left">
+  <div class="col-lg-4 col-md-4 pull-left res-pd">
     <div class="small bg-white p-4">
       <h6>Attendance Snapshot by Month</h6>
       <bar-chart :chart-data="datacollection" :options="options"></bar-chart>
@@ -55,3 +55,11 @@
     }
   }
 </script>
+
+<style scope>
+  @media only screen and (max-width:767px){
+    .res-pd{
+            margin-bottom: 30px;
+    }
+  }
+</style>

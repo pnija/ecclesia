@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-4 pull-left">
+  <div class="col-lg-4 col-md-4 pull-left">
     <div class="small bg-white p-4">
       <h6>Attendance % - Current vs Past Week</h6>
       <pie-chart :chart-data="datacollection"></pie-chart>
