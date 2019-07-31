@@ -9,7 +9,11 @@
             <span class="logo-img logo-img2 pull-left mr-2"><img class="img-fluid" src="../assets/image/logo-main2.jpg" /></span>
             <span class="b5 logo-name">Ecclesia <span class="cn-grp b4">Connecting Group</span></span>
         </div>
-        <div class="user-profile pull-right "><span class="logo-img pull-left mr-2"><img class="img-fluid" src="../assets/image/pro-pic.jpg" /></span><p class="pull-left">Harry</p><i class="fas fa-chevron-down ml-2"></i></div>
+        <div class="user-profile pull-right position-relative">
+            <span class="logo-img pull-left mr-2"><img class="img-fluid" src="../assets/image/pro-pic.jpg" /></span>
+            <p class="pull-left">Harry</p><i class="fas fa-chevron-down ml-2"></i>
+            <button class="position-absolute logout p-2">Logout</button>
+        </div>
     </header>
 </template>
 
@@ -59,12 +63,29 @@ export default {
     .logo-name{
         font-size: 21px;
     }
+    .user-profile{
+        cursor: pointer;
+    }
     .user-profile p{
         line-height: 2.4;
         margin: 0;
     }
     .user-profile i{
         line-height: 2.4;
+    }
+    .logout{
+        top: 40px;
+        left: 0;
+        z-index: 100;
+        background: #eee;
+        border: inherit;
+        border-radius: 25px;
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+        display: none;
+        transition: all 0.3s ease 0.0s;
+    }
+    .user-profile:hover .logout,.user-profile:focus .logout{
+        display: block;
     }
     @media only screen and (max-width:460px){
         .user-profile p{
