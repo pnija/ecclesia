@@ -1,15 +1,18 @@
 <template>
-  <div class="small">
-    <scatter-chart :chart-data="datacollection" :options="options"></scatter-chart>
+  <div class="col-lg-4 col-md-4 pull-left res-pd">
+    <div class="small bg-white p-4">
+      <h6>Attendance % by Month</h6>
+      <line-chart :chart-data="datacollection" :options="options"></line-chart>
+    </div>
   </div>
 </template>
 
 <script>
-  import ScatterChart from './js/scatter.js'
+  import LineChart from './js/line.js'
 
   export default {
     components: {
-      ScatterChart
+      LineChart
     },
     data () {
       return {
@@ -26,15 +29,17 @@
             datasets: [{
                 label: 'Scatter Dataset',
                 data: [{
-                    x: -10,
-                    y: 0
-                }, {
                     x: 0,
-                    y: 10
+                    y: 5
+                }, {
+                    x: 5,
+                    y: 0
                 }, {
                     x: 10,
                     y: 5
-                }]
+                }],
+                backgroundColor:'rgba(0,0,0,0)',
+                borderColor:'rgba(181,31,50,1)'
             }]
         };
         this.options =  {
@@ -49,3 +54,11 @@
     }
   }
 </script>
+
+<style scope>
+  @media only screen and (max-width:767px){
+    .res-pd{
+            margin-bottom: 30px;
+    }
+  }
+</style>

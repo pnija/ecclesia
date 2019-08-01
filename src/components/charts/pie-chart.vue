@@ -1,6 +1,9 @@
 <template>
-  <div class="small">
-    <pie-chart :chart-data="datacollection"></pie-chart>
+  <div class="col-lg-4 col-md-4 pull-left">
+    <div class="small bg-white p-4">
+      <h6>Attendance % - Current vs Past Week</h6>
+      <pie-chart :chart-data="datacollection"></pie-chart>
+    </div>
   </div>
 </template>
 
@@ -18,20 +21,20 @@
       }
     },
     mounted () {
-      this.fillData()
+      this.fillData()   
     },
     methods: {
       fillData () {
         this.datacollection = {
             datasets: [{
-                data: [10, 20, 30]
+                data: [25, 75],
+                backgroundColor: ['#d3ac6b','#b51f32']
             }],
 
             // These labels appear in the legend and in the tooltips when hovering different arcs
             labels: [
-                'Red',
-                'Yellow',
-                'Blue'
+                'Current Week',
+                'Past Week',
             ]
         };
       },
@@ -39,9 +42,4 @@
   }
 </script>
 
-<style>
-  .small {
-    max-width: 200px;
-    margin:  150px auto;
-  }
-</style>
+

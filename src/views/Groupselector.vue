@@ -1,6 +1,6 @@
 <template>
     <theme>
-        <div class="add-visitor fullwidth pull-left bg-white p-5 mt-4">
+        <div class="add-visitor fullwidth pull-left bg-white mt-4">
             <div class="col-lg-12 pull-left mb-4">
                 <div class="row">
                     <div class="col-lg-3 pull-left">
@@ -56,8 +56,10 @@
                 </div>
             </div>
             <div class="col-lg-9 pull-left">
-                <button type="submit" class="fullwidth pull-right pt-2 pb-2 bg text-white text-center b5 border-0 rounded">Save</button>
-                <button type="button" class="fullwidth pull-right pt-2 pb-2 can-btn text-white text-center b5 border-0 rounded mr-3">Cancel</button>
+                <div class="inner-sec">
+                    <button type="submit" class="fullwidth pull-right pt-2 pb-2 bg text-white text-center b5 border-0 rounded">Save</button>
+                    <button type="button" class="fullwidth pull-right pt-2 pb-2 can-btn text-white text-center b5 border-0 rounded mr-3">Cancel</button>
+                </div>
             </div>
         </div>
     </theme>
@@ -81,6 +83,9 @@ export default {
         padding: 0 30px 0 330px;
         background: #ebf0f2;
     }
+    .add-visitor{
+        padding: 46px;
+    }
     .add-visitor button{
         max-width: 150px;
     }
@@ -99,6 +104,21 @@ export default {
     @media only screen and (max-width: 991px) {
         .height-100{
             height: inherit !important;
+        }
+    }
+    @media only screen and (max-width: 471px) {
+        .inner-sec{
+            display: table;
+            margin: 0 auto;
+        }
+        .inner-sec button{
+            margin-bottom: 15px;
+        }
+        .inner-sec button:last-child{
+            margin: inherit !important;
+        }
+        .add-visitor{
+            padding: 24px !important;
         }
     }
 </style>
