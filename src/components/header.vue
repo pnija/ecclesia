@@ -65,6 +65,8 @@ export default {
     }
     .user-profile{
         cursor: pointer;
+        position: relative;
+        z-index: 100;
     }
     .user-profile p{
         line-height: 2.4;
@@ -74,18 +76,21 @@ export default {
         line-height: 2.4;
     }
     .logout{
-        top: 40px;
+        top: 0px;
         left: 0;
         z-index: 100;
         background: #eee;
         border: inherit;
         border-radius: 25px;
         box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-        display: none;
         transition: all 0.3s ease 0.0s;
+        opacity: 0; 
+        z-index: -1;
+        width: 100%;
     }
     .user-profile:hover .logout,.user-profile:focus .logout{
-        display: block;
+        opacity: 1; 
+        top: 38px;
     }
     @media only screen and (max-width:460px){
         .user-profile p{
