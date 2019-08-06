@@ -34,6 +34,7 @@
                 </div>
             </div>
         </div>
+        <div class="vis-bg fullwidth pull-left bg-white d-none"></div>
         <div class="visitor-wrapper fullwidth pull-left bg-white">
             <div class="col-lg-6 col-md-6  pull-left">
                 <h4 class="mt-4 mb-4 vis-let">A</h4>
@@ -45,7 +46,7 @@
                                 <h5 class="m-0">Andrew</h5>
                                 <p class="m-0 vis-sec">RSVP ($0)</p>
                             </div>
-                            <div class="pull-right vis-icon">
+                            <div class="pull-right vis-icon color">
                                 <i class="far fa-check-circle"></i>
                             </div>
                         </div>
@@ -73,6 +74,33 @@
                                 <p class="m-0 vis-sec">RSVP ($0)</p>
                             </div>
                             <div class="pull-right vis-icon">
+                                <i class="far fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
+                        <div class="visitor fullwidth pull-left position-relative pl-60">
+                            <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
+                            <div class="pull-left">
+                                <h5 class="m-0">Andrew</h5>
+                                <p class="m-0 vis-sec">RSVP ($0)</p>
+                            </div>
+                            <div class="pull-right vis-icon">
+                                <i class="far fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="mt-4 mb-4 vis-let">A</h4>
+                <ul class="fullwidth pull-left">
+                    <li class="fullwidth pull-left li-list2 mb-2 pb-2">
+                        <div class="visitor fullwidth pull-left position-relative pl-60">
+                            <div class="visitor-pic rounded-circle position-absolute"><img src="../assets/image/pro-pic.jpg" class="img-fluid" /></div>
+                            <div class="pull-left">
+                                <h5 class="m-0">Andrew</h5>
+                                <p class="m-0 vis-sec">RSVP ($0)</p>
+                            </div>
+                            <div class="pull-right vis-icon color">
                                 <i class="far fa-check-circle"></i>
                             </div>
                         </div>
@@ -210,7 +238,7 @@ export default {
         line-height: 2;
         border-bottom: 1px solid #eeeeee;
     }
-    .li-list:last-child{
+    .li-list2:last-child{
         border-bottom: inherit;
     }
     .vis-let{
@@ -218,6 +246,15 @@ export default {
     }
     .pad-head{
         padding-right: 5px;
+    }
+    .visitor-wrapper{
+        max-height: 420px;
+        overflow-y: scroll;
+    }
+    .vis-bg{
+        background: url("../assets/image/note.png") no-repeat center center;
+        max-height: 420px;
+        overflow-y: scroll;
     }
     @media only screen and (max-width: 767px){
         .pad-head2{
